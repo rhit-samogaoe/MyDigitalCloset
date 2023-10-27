@@ -1,7 +1,8 @@
 export default function Footer(){
 
     return(
-        <section className="">
+        <section className="123">
+            <h1>Header</h1>
         </section>
 
     )
