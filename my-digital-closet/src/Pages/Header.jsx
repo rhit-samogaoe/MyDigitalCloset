@@ -1,10 +1,20 @@
-export default function Footer(){
+import React from 'react'; 
+// import './App.css'
+export default function Header(){
 
     return(
-        <section className="123">
-            <h1>Header</h1>
-        </section>
-
-    )
-
-}
+        <nav className="navbar">
+        <ul className="nav-list">
+          <li className="nav-item">
+            <a href="/">Account</a>
+          </li>
+          <li className="nav-item">
+            <a href="/closet">Closet</a>
+          </li>
+          <li className="nav-item">
+            <a href="/favorites">Favorites</a>
+          </li>
+        </ul>
+      </nav>
+    );
+  }
