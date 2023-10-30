@@ -18,6 +18,9 @@ export default function Footer(){
           <div className="scroll-to-top">
             <button onClick={scrollToTop}>Back to Top</button>
           </div>
+
+          <p className="copyright">© {new Date().getFullYear()} Ruke Sam-Ogaga & Esly Cerritos. All rights reserved.</p>
+          <p>Copyright &#169; 2023 MyDigitalCloset. All Rights Reserved</p>
         </footer>
       );
 
