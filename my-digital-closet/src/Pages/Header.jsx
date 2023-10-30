@@ -1,4 +1,6 @@
 import React from 'react'; 
+import { Link } from "react-router-dom"; 
+
 // import './App.css'
 export default function Header(){
 
@@ -9,7 +11,7 @@ export default function Header(){
             <a href="/">Account</a>
           </li>
           <li className="nav-item">
-            <a href="/closet">Closet</a>
+            <Link to="/closet" ><a href="/closet">Closet</a></Link>
           </li>
           <li className="nav-item">
             <a href="/favorites">Favorites</a>

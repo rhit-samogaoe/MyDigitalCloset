@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-button {
+  margin: 10px;
+}
+
+.scroll-to-top {
+  margin-top: 20px;
+}
+
+.scroll-to-top button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.linked-items {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Categories CSS */
+.category-card-container{
+      
+  display: grid;
+  gap: 42.6px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.category-card{
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  border-radius: 10.6px;
+  min-height: 150px;
+  min-width: 250px;
+  background-color:rgb(255, 204, 212);
+}
+
+.category-card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+/* -------------------Media Queries--------------------- */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media (min-width : 576px) {
+ 
+  .category-card-container {
+      grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .category-card {
+      
+      min-height: 150px;
+      min-width: 250px;
+    
+      border-left: 1.75rem solid var(--card-strip);  
+  }
+      
+}
+
+@media (min-width : 800px){    
+  
+  .category-card-containerr {
+      grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .category-card {
+    
+      min-height: 150px;
+      min-width: 300px;
+      
+      border-left: 1.85rem solid var(--card-strip);  
+  }
+
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 
-export default function ProjectCard({ category, index }) {
+export default function ProjectCard({category}) {
 
     const [categoryData, setCategoryData] = useState(); 
 
@@ -9,9 +9,9 @@ export default function ProjectCard({ category, index }) {
 
         <div className="category-card" >
 
-            <div >
+            <div className="category-card-content">
 
-                <h3 className="project-section-title">{category.name}</h3>
+                <h3 className="project-section-title">{category}</h3>
 
             </div>
 
